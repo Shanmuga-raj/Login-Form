@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Stick&display=swap" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
                 crossorigin="anonymous"> -->
@@ -14,48 +18,52 @@
 
 <body>
 
-        <h3 class="heading">New Registration</h3>
+    <h3 class="heading">New Registration...</h3>
 
     <div>
-        <form action="" class="uname">
+        <form action="index.html" class="main">
             <table>
                 <tr>
-                    <td><label for="name">Name:</label></td>
-                    <td><input type="text" id="name"></td>
+                    <td><label for="name">Name : &gt;</label></td>
+                    <td><input type="text" id="name" placeholder="name"></td>
                 </tr>
                 <tr>
-                    <td><label for="email">E-mail ID:</label></td>
-                    <td><input type="text" id="email"></td>
+                    <td><label for="email">E-mail ID : &gt;</label></td>
+                    <td><input type="email" id="email" placeholder="username@email.com"></td>
                 </tr>
                 <tr>
-                    <td><label for="mobile">Mobile Number:</label></td>
-                    <td><input type="text" id="mobile"></td>
+                    <td><label for="mobile">Mobile Number : &gt;</label></td>
+                    <td><input type="tel" id="mobile" placeholder="9876543210"></td>
                 </tr>
                 <tr>
-                    <td><label for="password">Password:</label></td>
+                    <td><label for="password">Password : &gt;</label></td>
                     <td><input type="password" id="password" name="" id="" placeholder="P@$sw0rD"></td>
                 </tr>
                 <tr>
-                    <td><label for="re-password">Confirm Password:</label></td>
+                    <td><label for="re-password">Confirm Password : &gt;</label></td>
                     <td><input type="password" id="re-password" name="" id="" placeholder="P@$sw0rD"></td>
                 </tr>
-
+                <!-- <tr>
+                    <td><label for="male">Male / </label><label for="female">Female / </label><label for="female">Other : &gt;</label></td>
+                    <td><input type="radio" id="male" name="gender" value="male">    <input type="radio" id="female" name="gender" value="female">   <input type="radio" id="other" name="gender" value="other"></td>
+                </tr> -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr class="submit">
+                    <td><input onclick="popup()" type="submit" value="submit"></td>
+                    <td><input type="submit" value="Already have account?"></td>
+                </tr>
             </table>
         </form>
-        <form class="output" action="">
-            <!-- <button><a href="register.html">Submit</a></button> -->
-            <button><a href="index.html">Already have account?</a></button>
-            <button onclick="popup()">submit</button>
-        </form>
+
     </div>
 
     <script>
         function popup() {
-            alert("submit?");
-            window.location = "index.html";
-            if (window.confirm("sure?")){
-                document.location = "index.html";
-            }
+            alert("Successfully Registered!");
         }
     </script>
 
