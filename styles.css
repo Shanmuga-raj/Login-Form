@@ -43,3 +43,7 @@ td  {
     text-align: center;
     width: 400px;
 }
+
+td button a{
+    color: inherit;
+}
